@@ -4,13 +4,12 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-//        applicationId "com.videox.demo"
-        applicationId "com.woodensword.zombie"
+        applicationId "com.videox.demo"
 
         minSdkVersion 17
         targetSdkVersion 27
         versionCode 1067
-        versionName "1.0"
+        versionName "2.0.1"
         multiDexEnabled true
         ndk {
             abiFilters 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
@@ -35,22 +34,20 @@ repositories {
 
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation fileTree(include: ['*.jar'], dir: 'libs')
 
+//    baselib
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support:multidex:1.0.3'
-
-//    // baselib
-    implementation(name: 'analytics-lite-release-vo1.1.7', ext: 'aar')
-//    //videox sdk
-    implementation(name: 'videox-sdk-vo2.0.1', ext: 'aar')
-    //VC add this if you need appsflyer
-//    implementation 'com.appsflyer:af-android-sdk:4.8.6'
-
-
     implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'com.google.android.gms:play-services-basement:15.0.1'
     implementation 'com.google.android.gms:play-services-ads-identifier:15.0.1'
+
+    implementation(name: 'analytics-lite-release-vo1.1.8', ext: 'aar')
+    implementation(name: 'videox-sdk-vo2.0.1', ext: 'aar')
+    implementation(name: 'reposal_sdk_1.0.7', ext: 'aar')
+//    add this if you need appsflyer
+//    implementation 'com.appsflyer:af-android-sdk:4.8.6'
 
     // admob
     implementation 'com.google.android.gms:play-services-ads:15.0.1'
@@ -89,9 +86,6 @@ dependencies {
     // applovin
     implementation 'com.applovin:applovin-sdk:9.5.4'
 
-    //reposal
-    implementation(name: 'reposal_sdk_1.0.7', ext: 'aar')
-
-    implementation 'com.videox.sdk:release_vo2.0.1.0808:11111111'
+//    implementation 'com.videox.sdk:release_vo2.0.1.0808:11111111'
 }
 
