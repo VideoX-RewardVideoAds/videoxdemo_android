@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final String TAG = "MainActivity";
 
-    private static String mAppId = "3265";
-    private static String mPubKey = "";
+    private static String mAppId = "3234";
+    private static String mPubKey = "f52275c7006fe85101637eedb1f73d5b";
 
     private EditText vNativeSlotIdEdit;
     private EditText editTextReward;

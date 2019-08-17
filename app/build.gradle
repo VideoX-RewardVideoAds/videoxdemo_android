@@ -4,7 +4,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.videox.demo"
+        applicationId "com.videox.abraod"
 
         minSdkVersion 17
         targetSdkVersion 27
@@ -34,58 +34,14 @@ repositories {
 
 
 dependencies {
-//    implementation fileTree(include: ['*.jar'], dir: 'libs')
-
-//    baselib
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support:multidex:1.0.3'
+
+    //    baselib
     implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'com.google.android.gms:play-services-basement:15.0.1'
     implementation 'com.google.android.gms:play-services-ads-identifier:15.0.1'
-
-    implementation(name: 'analytics-lite-release-vo1.1.8', ext: 'aar')
-    implementation(name: 'videox-sdk-vo2.0.1', ext: 'aar')
-    implementation(name: 'reposal_sdk_1.0.7', ext: 'aar')
-//    add this if you need appsflyer
-//    implementation 'com.appsflyer:af-android-sdk:4.8.6'
-
-    // admob
-    implementation 'com.google.android.gms:play-services-ads:15.0.1'
-    implementation 'com.google.android.gms:play-services-location:15.0.1'
-
-    // facebook
-    implementation('com.facebook.android:audience-network-sdk:5.0.1') {
-        exclude group: 'com.google.android.gms'
-    }
-
-    // Fyber SDK
-    implementation 'com.fyber:fairbid:9.51.0'
-
-    // applovin
-    implementation 'com.applovin:applovin-sdk:9.5.4'
-
-    // ironSource
-    implementation 'com.ironsource.sdk:mediationsdk:6.8.0@jar'
-
-    // mopub
-    implementation('com.mopub:mopub-sdk:5.2.0@aar') {
-        transitive = true
-        exclude module: 'libAvid-mopub' // To exclude AVID
-        exclude module: 'moat-mobile-app-kit' // To exclude Moat
-    }
-
-    // unity
-    implementation(name: 'unity-ads', ext: 'aar')
-
-    // vungle
-    implementation 'com.github.vungle:vungle-android-sdk:6.3.12'
-
-    // adcolony
-    implementation 'com.adcolony:sdk:3.3.6'
-
-    // applovin
-    implementation 'com.applovin:applovin-sdk:9.5.4'
-
-//    implementation 'com.videox.sdk:release_vo2.0.1.0808:11111111'
+    //Videox
+    implementation 'com.videox.sdk:release_va2.0.1:11111111'
 }
 

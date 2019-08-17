@@ -18,7 +18,6 @@ public class MyApplicaton extends Application {
     public void onCreate() {
         super.onCreate();
 
-
     }
 
 
