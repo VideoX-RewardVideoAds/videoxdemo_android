@@ -1,1 +1,1 @@
-include ':app', ':ironsource'
+include ':app'
