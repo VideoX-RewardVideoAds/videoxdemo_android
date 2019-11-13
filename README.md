@@ -4,7 +4,7 @@
 
 # 接入方式
 
-- 通过运营获取架包的网络地址：com.videox.sdk:release_vc\*：\*
+- 通过运营获取架包的网络地址：com.videox.sdk:release_va\*：\*
 - 在目标项目对应 module 的 dependencies 中添加上述新加包的依赖
 - 按照 build.gradle 文件内容添加相应的依赖
 - 添加不同平台的warehouse地址，请参阅演示项目的build.gradle或dependencies文件
