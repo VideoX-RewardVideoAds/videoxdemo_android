@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.dotc.ll.LocalLog;
+import com.facebook.ads.AdSettings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final String TAG = "MainActivity";
 
-    private static String mAppId = "3234";
+    private static String mAppId = "3553";
     private static String mPubKey = "f52275c7006fe85101637eedb1f73d5b";
 
     private EditText vNativeSlotIdEdit;
@@ -105,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             }
         });
-
+//        AdSettings.addTestDevice("19cd2735-fff4-43d0-917b-10be96e2d082");
         loadNativeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
